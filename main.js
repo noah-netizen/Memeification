@@ -8,7 +8,7 @@ const generateMemeBtn = document.querySelector(
   const updateDetails = (url, title, author) => {
     memeImage.setAttribute("src", url);
     memeTitle.innerHTML = title;
-    memeAuthor.innerHTML = `<span class="rainbow-text">This r/ComedyArchaeology meme has been brough to you by: ${author}</span>`;
+    memeAuthor.innerHTML = `<span class="rainbow-text">This r/ComedyArchaeology meme has been brought to you by: ${author}</span>`;
   };
   
   const generateMeme = () => {
