@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memetastic Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- meme cursor -->
+    <style>
+        html {
+             background-color: bisque;
+             background-attachment: fixed;
+             background-size: cover;
+            cursor: url("images/pepepng.png"), auto;
+        } 
+    </style>
+
+  </head>
+  <body>
+    
+    <div class="meme-generator">
+        <button class="generate-meme-btn"><span class="rainbow-text">Meme Machine</span></button>
+        <h2 class="meme-title">Loading...</h2>
+
+        <img src="" alt="">
+        <div class="meme-author"></div>
+    </div>
+    <script src="main.js"></script>
+
+    <script type="text/javascript">
+        const audio = new Audio("audio/bruhaudio.mp3");
+        const buttons = document.querySelectorAll("button");
+        
+        buttons.forEach(button => {
+          button.addEventListener("click", () => {
+            audio.play();
+          });
+        });
+    </script>
+  </body>
+</html>
